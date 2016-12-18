@@ -1,6 +1,6 @@
 # ForScientificReproducibility
 
-This repository contains codes, data, and crystal structure files to reproduce scientific results in my papers.
+This repository contains codes, data, and crystal structure files to reproduce scientific results in published articles on which I am a (co)author.
 
 ## 2016_PNAS_StatModelRotatingLigands
 
@@ -20,7 +20,7 @@ All codes written in the [Julia](http://julialang.org/) programming language.
 ### Reproducing plots in the main text and SI.
 
 * `Rotating ligand model.ipynb`: reproduces most plots in the main text, loads modules in `*.jl` for computations.
-* `Higher dimension Monte Carlo simulations.ipynb`: run 2D Monte Carlo simulations and compute mean field theory solution.
+* `Higher dimension Monte Carlo simulations.ipynb`: run 2D Monte Carlo simulations.
 * `NVT.ipynb`: reproduce NVT simulations of 2D simulation for Fig. S13.
 
 ### Density functional theory calculations for MIL-91(Al) case study
