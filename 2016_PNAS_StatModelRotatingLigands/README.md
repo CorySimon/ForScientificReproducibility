@@ -15,7 +15,8 @@ All codes written in the [Julia](http://julialang.org/) programming language.
 
 ### Reproducing plots in the main text and SI.
 
-* `Rotating ligand model.ipynb`: reproduces most plots in the main text, loads modules in `*.jl` for computations.
+* `Rotating ligand model.ipynb`: reproduces plots regarding main, 1D model, loads modules in `*.jl` for computations.
+* `mean_field_theory.ipynb`: reproduces plots for mean field theory approximation, loads modules in `*.jl` for computations.
 * `Higher dimension Monte Carlo simulations.ipynb`: run 2D Monte Carlo simulations.
 * `NVT.ipynb`: reproduce NVT simulations of 2D simulation for Fig. S13.
 
