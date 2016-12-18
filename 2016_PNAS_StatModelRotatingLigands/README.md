@@ -21,4 +21,9 @@ All codes written in the [Julia](http://julialang.org/) programming language.
 
 ### Density functional theory calculations for MIL-91(Al) case study
 
-
+The DFT directory contains VASP input files and the output relaxed crystal structure.
+* `POSCAR.cif` : experimental crystal structure as provided by Guillaume Maurin from the study of Llewellyn PL, et al. (2015) Structural origin of unusual CO2 adsorption behavior of a small-pore aluminum bisphosphonate MOF. *J Phys Chem C* 119(8):4208-4216. This was converted to the VASP input file `POSCAR`.
+* `CONTCAR.cif` : DFT-relaxed crystal structure as converted from the VASP output file `CONTCAR`.
+* `INCAR`, `KPOINTS`, `POSCAR`, `POTCAR` : standard VASP input files
+* `CONTCAR` : standard VASP output file
+* `vdw_kernel.bindat` : precalculated kernel required for using the rev-vdW-DF2 functional

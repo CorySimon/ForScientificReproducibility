@@ -1,0 +1,36 @@
+SYSTEM = right
+
+ADDGRID = .TRUE.
+PREC = Accurate
+ENCUT = 1000
+ALGO = Fast 
+
+ISMEAR = 0
+SIGMA  = 0.02
+
+# parallelization
+LPLANE = .TRUE.    # distribute real-space mesh
+NCORE = 8
+
+# relax
+ISIF = 3           # 2=atoms, 3=2+lattice
+IBRION = 2         # Quasi-Newton
+NFREE = 10
+NELMIN = 4         # minimum number of electronic steps
+EDIFF  = 1E-5      # SCF energy convergence
+EDIFFG = -0.01     # max force for ionic steps
+NSW    = 1000      # max ionic steps
+POTIM = 0.2
+
+# outputs
+NWRITE = 1
+LCHARG = T
+LWAVE  = T
+
+# vdw-df2-rev2
+GGA = MK               #(1) B86b exchange with
+PARAM1 = 0.1234        #      mu = 0.1234
+PARAM2 = 0.711357      #      k = 0.711357
+AGGAC = 0.0000         #(2) LDA correlation
+LUSE_VDW = T           #(3) vdW-DF2 nonlocal correlation
+Zab_vdW = -1.8867      #      Zab = -1.8867
